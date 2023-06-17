@@ -5,6 +5,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 import Swiper from 'swiper';
 import 'swiper/swiper.min.css';
+dd
 import 'swiper/swiper-bundle.css';
 import ReactPaginate from 'react-paginate';
 
