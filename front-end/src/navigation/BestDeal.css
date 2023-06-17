@@ -1,0 +1,145 @@
+.card {
+    position: relative;
+  
+    max-width: 22.5em;
+    padding-bottom: 1.3125em;
+  
+    color: #424242;
+    font-size: 1rem;
+  
+    background-color: #fff;
+    border-radius: .3125em;
+    box-shadow: 0 .625em 2em 0 rgba(#bbb, .2);
+  
+    &-image {
+      border-radius: .3125em .3125em 0 0;
+      margin: 0;
+      overflow: hidden;
+  
+      
+    }
+    .img {
+        display: block;
+        width: 100%;
+      }
+    &-content {
+      padding: 1.3125em;
+    }
+  
+    &-header {
+      padding-bottom: 1.3125em;
+      text-align: center;
+  
+      .h2 { margin-top: 0; }
+      
+      .address {
+        margin-bottom: 1em;
+        font-style: normal;
+        
+        .icon-pin { color: #d77bfc; }
+      }
+      
+      
+      .span { font-size: .8em; }
+      
+      & + .card-stats {
+        border-top: 1px solid #f2f2f2;
+      }
+    }
+  
+    &-stats {
+      padding-top: 1.3125em;
+      padding-left: 0;
+      margin: 0;
+      text-align: center;
+  
+      .li {
+        display: inline-block;
+        margin: 0 1em;
+        font-size: .75em;
+        vertical-align: middle;
+      }
+  
+      [class^="icon-"] {
+        display: block;
+        margin: 0 auto;
+        color: #aaa;
+        font-size: 2em;
+      }
+  
+      .strong {
+        display: block;
+        font-size: 2.5em;
+        margin: .3em 0 .1em;
+      }
+    }
+  
+    &-button {
+      position: absolute;
+      bottom: -1.3125em;
+      left: 50%;
+      transform: translateX(-50%);
+  
+      border: 0;
+      padding: .75em 3em;
+  
+      color: #fff;
+      font-size: 1em;
+      font-weight: 700;
+      white-space: nowrap;
+  
+      background-image: linear-gradient(to right, #e7a3fd 0%, #d87afc 100%);
+      border-radius: 1.5em;
+      box-shadow: 0 .5em 1em 0 rgba(#bbb, .2);
+      cursor: pointer;
+  
+      &:hover,
+      &:focus { background: #d87afc; }
+  
+      &:active { background: #e7a3fd; }
+    }
+  }
+  
+  body {
+   
+  
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #fff;
+    border-bottom-right-radius: .5rem;
+    box-shadow: 0 0 .5rem rgba(#000, .3);
+    
+    .label {
+      font-size: 1;
+      font-weight: bold;
+      display: block;
+      margin-bottom: .5em;
+    }
+    
+    .input { width: 100%; }
+  }
+  
+ 
+  
+
+  .icon-pin { color: inherit; font-size: 1em; position: relative; display: inline-block; margin-left: .33333em; margin-top: .16666em; width: 1em; height: 1em; border: solid .08333em currentColor; border-radius: .58333em .58333em .58333em 0; background-color: currentColor; transform: rotate(-45deg); }
+  .icon-pin:before { content: ''; position: absolute; left: .25em; top: .25em; width: .33333em; height: .33333em; color: white; border: solid .08333em currentColor; border-radius: .25em; background-color: currentColor; }
+  
+  .icon-chat { color: inherit; font-size: 1em; position: relative; display: inline-block; margin-left: .2em; margin-top: .4em; width: 1.5em; height: 1em; border: solid .1em currentColor; border-radius: .2em; }
+  .icon-chat:before { content: ''; position: absolute; left: .3em; top: .8em; width: .4em; height: .4em; background-color: white; border-bottom: solid .1em currentColor; border-right: solid .1em currentColor; transform: rotate(45deg); }
+  
+  .icon-camera { color: inherit; font-size: 1em; position: relative; display: inline-block; margin-left: .2em; margin-top: .5em; width: 1.6em; height: 1em; border-radius: .1em; border: solid .1em currentColor; }
+  .icon-camera:before { content: ''; position: absolute; left: .5em; top: .2em; width: .4em; height: .4em; border-radius: .3em; border: solid .1em currentColor; }
+  .icon-camera:after { content: ''; position: absolute; right: .2em; top: -.2em; width: .4em; height: .1em; border-radius: .1em .1em 0 0; background-color: currentColor; }
+  
+  .icon-audio { color: inherit; font-size: 1em; position: relative; display: inline-block; margin-left: .5em; margin-top: .8em; width: .9em; height: .7em; border-left: solid .1em currentColor; border-right: solid .1em currentColor; border-bottom: solid .1em currentColor; border-radius: 0 0 50% 50%; }
+  .icon-audio:before { content: ''; position: absolute; left: .1em; top: -.6em; width: .5em; height: 1em; border: solid .1em currentColor; border-radius: .4em; }
+  .icon-audio:after { content: ''; position: absolute; left: .4em; bottom: -.4em; width: .1em; height: .4em; background-color: currentColor; }
+  

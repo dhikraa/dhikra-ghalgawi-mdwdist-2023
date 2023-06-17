@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1;
+}
+
+.Root {
+  height: 150vh;
+}
+
+.Tabs {
+  height: 100%;
+  display: flex;
+}
+
+.TabList {
+  width: 20rem;
+  background: #38d39f;
+  list-style-type: none;
+  margin: 0;
+
+}
+
+.TabPanel {
+  flex: 1;
+  display: none;
+  padding: 1.5rem 2rem;
+}
+.TabPanel.is-active {
+  display: block;
+}
+
+.Button {
+  display: inline-block;
+  width: 100%;
+  padding: 1rem 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+}
+.Button:focus,
+.Button:hover {
+  outline: 0;
+  background: #37474F;
+}
+.Tab.is-active .Button {
+  background: #37474F;
+}
+.nav {background: #263238;}
+.btn-primary {
+  background: #38d39f;
+  color: #fff;
+  margin-right: 10px; /* Espacement horizontal entre les boutons */
+  border-radius: 10px;
+}
+.btn-group {
+  margin-bottom: 10px; /* Espacement vertical entre les boutons */
+
+}
+.btn-primary:hover {
+  background: #37474F;;;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
