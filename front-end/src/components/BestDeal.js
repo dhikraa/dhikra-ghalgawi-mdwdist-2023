@@ -8,133 +8,127 @@ const BestDeal = () => {
   };
 
   return (
-    <section class="articles">
-        <article>
-    <div className="center">
-      <article
-        id="card"
-        className="card"
-        style= {{ transform: `scale(${1 + cardSize / 10})` }}
-      >
-        <figure className="card-image">
-          <img
-            src="../images/lamonnalisa.jpg" 
-            alt=""
-          />
-        </figure>
+    <section className="articles">
+      <article>
+        <div className="center">
+          <article
+            id="card"
+            className="card"
+            style={{ transform: `scale(${1 + cardSize / 10})` }}
+          >
+            <figure className="card-image">
+              <img
+                src="../images/lamonnalisa.jpg"
+                alt=""
+              />
+            </figure>
 
-        <div className="card-content">
-          <header className="card-header">
-            <h2>la monnalisa</h2>
+            <div className="card-content">
+              <header className="card-header">
+                <h2>Malibo</h2>
 
-            <address>
-              <span className="icon-pin" aria-hidden="true"></span>
-              8 patriot square E2 9NF
-            </address>
+                <address>
+                  <span className="icon-pin" aria-hidden="true"></span>
+                  Djerba Houmet Assouk
+                </address>
+              </header>
 
-            <span>Average price: $35</span>
-          </header>
+              <ul className="card-stats">
+                <li>
+                  <span className="icon-chat" aria-hidden="true"></span>
+                  <strong>346 </strong>
+                  avis
+                </li>
 
-          <ul className="card-stats">
-            <li>
-              <span className="icon-chat" aria-hidden="true"></span>
-              <strong>346 </strong>
-               reviews
-            </li>
+                <li>
+                  <span className="icon-camera" aria-hidden="true"></span>
+                  <strong>165 </strong>
+                  photos
+                </li>
 
-            <li>
-              <span className="icon-camera" aria-hidden="true"></span>
-              <strong>165 </strong>
-               photos
-            </li>
+                <li>
+                  <span className="icon-audio" aria-hidden="true"></span>
+                  <strong>205</strong>
+                  plats
+                </li>
+              </ul>
+            </div>
+          </article>
 
-            <li>
-              <span className="icon-audio" aria-hidden="true"></span>
-              <strong>205</strong>
-               dishes
-            </li>
-          </ul>
+          <div className="form">
+            
+            <input
+              id="cardSize"
+              type="range"
+              min="-5"
+              max="5"
+              value={cardSize}
+              onChange={handleCardSizeChange}
+            />
+          </div>
         </div>
-
-        <button className="card-button">Book table</button>
       </article>
 
-      <div className="form">
-        <label htmlFor="cardSize">Change the size:</label>
-        <input
-          id="cardSize"
-          type="range"
-          min="-5"
-          max="5"
-          value={cardSize}
-          onChange={handleCardSizeChange}
-        />
-      </div>
-    </div>
-    </article>
-    <article>
-    <div className="center">
-      <article
-        id="card"
-        className="card"
-        style= {{ transform: `scale(${1 + cardSize / 10})` }}
-      >
-        <figure className="card-image">
-          <img
-            src="../images/alliance.jpg"
-            alt=""
-          />
-        </figure>
+      <article>
+        <div className="center">
+          <article
+            id="card"
+            className="card"
+            style={{ transform: `scale(${1 + cardSize / 10})` }}
+          >
+            <figure className="card-image">
+              <img
+                src="../images/alliance.jpg"
+                alt=""
+              />
+            </figure>
 
-        <div className="card-content">
-          <header className="card-header">
-            <h2>Alliance</h2>
+            <div className="card-content">
+              <header className="card-header">
+                <h2>Koolfood</h2>
 
-            <address>
-              <span className="icon-pin" aria-hidden="true"></span>
-              27 old glousester ST, 4563
-            </address>
+                <address>
+                  <span className="icon-pin" aria-hidden="true"></span>
+                  Djerba Houmat Assouk
+                </address>
+              </header>
 
-            <span>Average price: $30</span>
-          </header>
+              <ul className="card-stats">
+                <li>
+                  <span className="icon-chat" aria-hidden="true"></span>
+                  <strong>350</strong>
+                  avis
+                </li>
 
-          <ul className="card-stats">
-            <li>
-              <span className="icon-chat" aria-hidden="true"></span>
-              <strong>350</strong>
-              reviews
-            </li>
+                <li>
+                  <span className="icon-camera" aria-hidden="true"></span>
+                  <strong>130</strong>
+                  photos
+                </li>
 
-            <li>
-              <span className="icon-camera" aria-hidden="true"></span>
-              <strong>130</strong>
-              photos
-            </li>
+                <li>
+                  <span className="icon-audio" aria-hidden="true"></span>
+                  <strong>200</strong>
+                  plats
+                </li>
+              </ul>
+            </div>
+          </article>
 
-            <li>
-              <span className="icon-audio" aria-hidden="true"></span>
-              <strong>200</strong>
-              dishes
-            </li>
-          </ul>
+          <div className="form">
+          
+            <input
+              id="cardSize"
+              type="range"
+              min="-5"
+              max="5"
+              value={cardSize}
+              onChange={handleCardSizeChange}
+            />
+          </div>
         </div>
-
-        <button className="card-button">Book table</button>
       </article>
 
-      <div className="form">
-        <label htmlFor="cardSize">Change the size:</label>
-        <input
-          id="cardSize"
-          type="range"
-          min="-5"
-          max="5"
-          value={cardSize}
-          onChange={handleCardSizeChange}
-        />
-      </div>
-    </div>
-    </article>
     <article>
     <div className="center">
       <article
@@ -151,14 +145,14 @@ const BestDeal = () => {
 
         <div className="card-content">
           <header className="card-header">
-            <h2>Shushi Gold</h2>
+            <h2>pappagalou</h2>
 
             <address>
               <span className="icon-pin" aria-hidden="true"></span>
-              OLD Shire LN
+             djerba midoun
             </address>
 
-            <span>Average price: $100</span>
+         
           </header>
 
           <ul className="card-stats">
@@ -182,11 +176,10 @@ const BestDeal = () => {
           </ul>
         </div>
 
-        <button className="card-button">Book table</button>
       </article>
 
       <div className="form">
-        <label htmlFor="cardSize">Change the size:</label>
+        
         <input
           id="cardSize"
           type="range"

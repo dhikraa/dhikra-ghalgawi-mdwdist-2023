@@ -51,10 +51,10 @@ inputs.forEach(input => {
                 } else if (roleId === 2) {
                     navigate("/admin-accueil");
                 } else {
-                    console.error("Unknown role_id:", roleId);
+                    console.error("inconnu role_id:", roleId);
                 }
             } else {
-                console.error("Error logging in:", res.data);
+                console.error("erreur de connection:", res.data);
             }
         });
     };
@@ -76,14 +76,14 @@ inputs.forEach(input => {
                     <div className="login-contentlog">
                         <form onSubmit={handleLogin} className='log'> 
                             <img src="../images/avatar.svg" alt='avatar' />
-                            <h2 className="titlelog">Welcome</h2>
+                            <h2 className="titlelog">Bienvenu</h2>
                             <div className="input-divlog onelog">
                                 <div className="ilog">
                                     <FontAwesomeIcon icon={faUser} className='FontAwesomeIcon' style={{ marginRight: '8px' }} />
                                     <i className="fas fa-userlog"></i>
                                 </div>
                                 <div className="divlog">
-                                    <h5>Username</h5>
+                                    <h5>Non d'utilisateur</h5>
                                     <input type="text" className="inputlog" value={username} onChange={(e) => setUsername(e.target.value)} />
                                 </div>
                             </div>
@@ -94,11 +94,11 @@ inputs.forEach(input => {
                                     <i className="fas fa-locklog"></i>
                                 </div>
                                 <div className="divlog">
-                                    <h5>Password</h5>
+                                    <h5>Mot de passe</h5>
                                     <input type="password" className="inputlog" value={password} onChange={(e) => setPassword(e.target.value)} />
                                 </div>
                             </div>
-                            <input type="submit"className="btnlog" onClick={handleLogin} value="Login" />
+                            <input type="submit"className="btnlog" onClick={handleLogin} value="connection" />
                             <div>
                                 <p>
                                     Vous n'avez pas de compte ?{' '}
