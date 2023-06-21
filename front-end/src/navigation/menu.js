@@ -15,6 +15,7 @@ import Connection from '../components/Connection';
 import Actualite from '../components/Actualite ';
 import Accueil from '../components/Accueil';
 import MenuResto from '../components/MenuResto';
+import ClientAccueil from '../components/ClientAccueil';
 
 
 
@@ -37,7 +38,7 @@ function Menu() {
           <Route path="/actualité" element={<Actualite />} />
           <Route path="/accueil" element={<Accueil />} />
           <Route path="/menu" element={<MenuResto />} />
-          
+          <Route path="/client-accueil" element={<ClientAccueil />} />
           
           
         </Routes>

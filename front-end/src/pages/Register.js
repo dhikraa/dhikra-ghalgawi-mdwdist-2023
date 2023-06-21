@@ -43,7 +43,7 @@ function Register() {
       if (response.data.message) {
         setRegisterStatus(response.data.message);
       } else {
-        setRegisterStatus('ACCOUNT CREATED SUCCESSFULLY');
+        setRegisterStatus('Compte créer avec succés');
       }
     });
   };
@@ -69,15 +69,15 @@ function Register() {
 		<div className="login-contentlog">
 			<form className='log'>
 				<img src="../images/avatar.svg"  alt='avatar'/> 
-				<h2  className="titlelog">Register Here</h2>
+				<h2  className="titlelog">S'inscrire ici</h2>
         <div  className="input-divlog onelog">
-           		   <div  className="ilog">
+           		   <div  className="ilog"> 
                   <FontAwesomeIcon icon={faEnvelope} className='FontAwesomeIcon' style={{ marginRight: '8px' }}/>
 
            		   		
            		   </div>
            		   <div  className="divlog">
-           		   		<h5>Address Email* </h5>
+           		   		<h5>Adresse Email* </h5>
                       <input type="text" className="inputlog" required 
                       onChange={(e) => { setEmail(e.target.value);}} />
 
@@ -93,7 +93,7 @@ function Register() {
            		   		
            		   </div>
            		   <div  className="divlog">
-           		   		<h5>Username* </h5>
+           		   		<h5>Nom d'utilisateur* </h5>
                       <input type="text" className="inputlog" required 
                       onChange={(e) => {setUsername(e.target.value);}}/>
 
@@ -107,7 +107,7 @@ function Register() {
            		    	<i className="fas fa-locklog"></i>
            		   </div>
            		   <div className="divlog">
-           		    	<h5>Password</h5>
+           		    	<h5>Mot de passe</h5>
            		    	<input type="password" className="inputlog"  
                     onChange={(e) => {
                       setPassword(e.target.value);
@@ -117,7 +117,7 @@ function Register() {
             	   </div>
             	</div>
 
-              <input type="submit" className="btnlog" value="Login" onClick={register}/>
+              <input type="submit" className="btnlog" value="S'inscrire" onClick={register}/>
                 <p>{registerStatus}</p>
             </form>
 
